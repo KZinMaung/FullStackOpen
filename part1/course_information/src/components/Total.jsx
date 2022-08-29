@@ -1,5 +1,6 @@
 const Total = (props)=>{
-    const total = props.part1.exercises + props.part2.exercises + props.part3.exercises;
+    let total = 0;
+    props.parts.map((part)=> total += part.exercises)
     return(
        <p>Number of exercises {total}</p> 
     )
